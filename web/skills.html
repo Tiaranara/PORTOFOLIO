@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #fff !important;
+            margin-right: 10px;
+            border-radius: 8px;
+            padding: 6px 18px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar-nav .nav-link.active, .navbar-nav .nav-link:focus {
+            background: #fff;
+            color: #222 !important;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .navbar-nav .nav-link:hover {
+            background: #f0f0f0;
+            color: #222 !important;
+        }
+    </style>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+        }
+        .skills-section {
+            background: rgba(255,255,255,0.85);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            padding: 50px 30px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .skills-title {
+            color: #2575fc;
+            font-weight: 700;
+        }
+        .progress {
+            height: 28px;
+            border-radius: 14px;
+            background: #e0eafc;
+        }
+        .progress-bar {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="skills-section">
+                    <h2 class="skills-title mb-4 text-center">Skills</h2>
+                    <div class="mb-4">
+                        <label class="mb-1">HTML</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <label class="mb-1">CSS</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                        <label class="mb-1">JavaScript</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                        <label class="mb-1">Bootstrap</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

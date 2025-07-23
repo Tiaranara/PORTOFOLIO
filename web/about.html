@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #fff !important;
+            margin-right: 10px;
+            border-radius: 8px;
+            padding: 6px 18px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar-nav .nav-link.active, .navbar-nav .nav-link:focus {
+            background: #fff;
+            color: #222 !important;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .navbar-nav .nav-link:hover {
+            background: #f0f0f0;
+            color: #222 !important;
+        }
+    </style>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+        }
+        .about-card {
+            background: rgba(255,255,255,0.85);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            padding: 60px 30px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            margin-bottom: 20px;
+        }
+        .about-title {
+            color: #2575fc;
+            font-weight: 700;
+        }
+        .about-desc {
+            font-size: 1.15rem;
+            color: #343a40;
+        }
+        .btn-custom {
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+            color: #fff;
+        }
+        .social-icons a {
+            color: #2575fc;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+        }
+        .social-icons a:hover {
+            color: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="about-card text-center">
+                    <img src="/img/Tiaraputri.jpg" alt="Profile" class="profile-img">
+                    <h2 class="about-title mb-3">Tentang Saya</h2>
+                    <p class="about-desc mb-4">Hai! Saya Tiara Putri Oktavia, seorang pelajar/mahasiswa Rekayasa Perangkat Lunak yang penuh semangat dalam menjelajahi dunia pemrograman dan pengembangan perangkat lunak. Meski masih dalam tahap belajar, saya percaya bahwa proses memahami setiap baris kode, mengatasi error, dan menciptakan solusi digital adalah petualangan yang menyenangkan.</p>
+                    <div class="social-icons mb-4">
+                        <a href="https://www.instagram.com/bubblereys/" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@alyacsa_?_t=ZS-8yFv4mTKnNB&_r=1" title="Tiktok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://github.com/Tiaranara" title="GitHub"><i class="bi bi-github"></i></a>
+                    </div>
+                    <a href="projects.html" class="btn btn-custom me-2">View Projects</a>
+                    <a href="contact.html" class="btn btn-outline-primary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

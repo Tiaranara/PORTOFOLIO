@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+        }
+        .contact-card {
+            background: rgba(255,255,255,0.85);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            padding: 50px 30px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .contact-title {
+            color: #2575fc;
+            font-weight: 700;
+        }
+        .btn-custom {
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+            color: #fff;
+        }
+        #formAlert {
+            transition: opacity 0.5s;
+
+             }
+        .navbar {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #fff !important;
+            margin-right: 10px;
+            border-radius: 8px;
+            padding: 6px 18px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar-nav .nav-link.active, .navbar-nav .nav-link:focus {
+            background: #fff;
+            color: #222 !important;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .navbar-nav .nav-link:hover {
+            background: #f0f0f0;
+            color: #222 !important;
+        }
+        .btn-custom {
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="contact-card">
+                    <h2 class="contact-title mb-4 text-center">Contact Me</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-custom">Send</button>
+                        </div>
+                    </form>
+                    <div id="formAlert" class="alert alert-success mt-3 d-none text-center" role="alert">
+                        Thank you for contacting me!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
